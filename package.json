@@ -1,0 +1,58 @@
+{
+  "name": "universe",
+  "version": "1.0.0",
+  "description": "GraphQl API ",
+  "main": "src/index.js",
+  "private": true,
+  "scripts": {
+    "start": "nodemon --exec 'npm run lint && babel-node -r dotenv/config' -- src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint src/index.js"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.4",
+    "@babel/node": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.20.1",
+    "nodemon": "^2.0.2"
+  },
+  "eslintConfig": {
+    "env": {
+      "es6": true,
+      "node": true
+    },
+    "extends": [
+      "airbnb-base"
+    ],
+    "globals": {
+      "Atomics": "readonly",
+      "SharedArrayBuffer": "readonly"
+    },
+    "parserOptions": {
+      "ecmaVersion": 2018,
+      "sourceType": "module"
+    },
+    "rules": {}
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Oxygen66/universe.git"
+  },
+  "author": "Adrien BREIL",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Oxygen66/universe/issues"
+  },
+  "homepage": "https://github.com/Oxygen66/universe#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0"
+  }
+}
