@@ -6,7 +6,8 @@
   "private": true,
   "scripts": {
     "start": "nodemon --exec \"npm run lint && babel-node -r dotenv/config\" -- src/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
+    "test:cov": "jest --coverage --notify --watchAll",
     "lint": "eslint src/index.js"
   },
   "dependencies": {
@@ -25,15 +26,21 @@
     "eslint": "^6.8.0",
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-jest": "^23.7.0",
+    "jest": "^25.1.0",
     "nodemon": "^2.0.2"
   },
   "eslintConfig": {
     "env": {
       "es6": true,
-      "node": true
+      "node": true,
+      "jest": true
     },
     "extends": [
       "airbnb-base"
+    ],
+    "plugins": [
+      "jest"
     ],
     "globals": {
       "Atomics": "readonly",
@@ -45,10 +52,8 @@
     },
     "rules": {}
   },
-  "babel": {
-    "presets": [
-      "@babel/preset-env"
-    ]
+  "jest": {
+    "verbose": true
   },
   "repository": {
     "type": "git",
