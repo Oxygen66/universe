@@ -10,7 +10,9 @@
     "lint": "eslint src/index.js"
   },
   "dependencies": {
+    "apollo-server-koa": "^2.10.1",
     "dotenv": "^8.2.0",
+    "graphql": "^14.6.0",
     "knex": "^0.20.10",
     "koa": "^2.11.0",
     "pg": "^7.18.2"
