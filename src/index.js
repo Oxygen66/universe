@@ -2,22 +2,17 @@ import Koa from 'koa';
 import { ApolloServer } from 'apollo-server-koa';
 import typeDefs from './typeDefs';
 import resolvers from './resolvers';
+import Planet from './models/Planet';
+import SpaceCenter from './models/SpaceCenter';
 
-// // Construct a schema, using GraphQL schema language
-// const typeDefs = gql`
-//   type Query {
-//     hello: String
-//   }
-// `;
-
-// Provide resolver functions for your schema fields
-// const resolvers = {
-//   Query: {
-//     hello: () => 'Hello world!',
-//   },
-// };
-
-const server = new ApolloServer({ typeDefs, resolvers });
+const server = new ApolloServer({
+  typeDefs,
+  resolvers,
+  dataSources: () => ({
+    planetAPI: new Planet(),
+    spaceCenterAPI: new SpaceCenter(),
+  }),
+});
 
 const app = new Koa();
 server.applyMiddleware({ app });

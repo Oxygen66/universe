@@ -1,8 +1,8 @@
 import { merge } from 'lodash';
-import helloResolvers from './helloResolver';
+import planetResolver from './planetResolver';
 
 const resolvers = merge(
-  helloResolvers,
+  planetResolver,
 );
 
 export default resolvers;

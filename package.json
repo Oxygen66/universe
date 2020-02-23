@@ -23,7 +23,10 @@
     "@babel/cli": "^7.8.4",
     "@babel/core": "^7.8.4",
     "@babel/node": "^7.8.4",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
     "@babel/preset-env": "^7.8.4",
+    "apollo-server-testing": "^2.10.1",
+    "babel-eslint": "^10.0.3",
     "eslint": "^6.8.0",
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-plugin-import": "^2.20.1",
@@ -51,6 +54,7 @@
       "ecmaVersion": 2018,
       "sourceType": "module"
     },
+    "parser": "babel-eslint",
     "rules": {}
   },
   "jest": {

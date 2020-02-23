@@ -5,7 +5,7 @@ const planetType = gql`
     id: ID!
     name: String!
     code: String!
-    spaceCenters(limit: Int = 10): [SpaceCenter]
+    spaceCenters(limit: Int = 5): [SpaceCenter!]
   }
 `;
 
