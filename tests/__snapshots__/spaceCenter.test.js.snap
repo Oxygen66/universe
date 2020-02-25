@@ -1,5 +1,138 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Queries spaceCenter fetch by id (exist) 1`] = `
+Object {
+  "data": Object {
+    "spaceCenter": Object {
+      "description": "Ab omnis ex laborum voluptatem voluptate et numquam. Sapiente aliquam unde recusandae. Nihil omnis quod. Voluptatem consequuntur molestiae dolores quibusdam et officiis.",
+      "id": "1082",
+      "name": "Kassulke Islands Space Center",
+      "planet": Object {
+        "code": "MER",
+        "id": "16",
+        "name": "Mercury",
+      },
+      "uid": "04c424d3-ff29-41b0-8d11-820c5e4c12b8",
+    },
+  },
+  "errors": undefined,
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`Queries spaceCenter fetch by id (not exist) 1`] = `
+Object {
+  "data": Object {
+    "spaceCenter": null,
+  },
+  "errors": undefined,
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`Queries spaceCenter fetch by uid (exist) 1`] = `
+Object {
+  "data": Object {
+    "spaceCenter": Object {
+      "description": "Ab omnis ex laborum voluptatem voluptate et numquam. Sapiente aliquam unde recusandae. Nihil omnis quod. Voluptatem consequuntur molestiae dolores quibusdam et officiis.",
+      "id": "1082",
+      "name": "Kassulke Islands Space Center",
+      "planet": Object {
+        "code": "MER",
+        "id": "16",
+        "name": "Mercury",
+      },
+      "uid": "04c424d3-ff29-41b0-8d11-820c5e4c12b8",
+    },
+  },
+  "errors": undefined,
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`Queries spaceCenter fetch by uid (not exist) 1`] = `
+Object {
+  "data": Object {
+    "spaceCenter": null,
+  },
+  "errors": Array [
+    [GraphQLError: "uid" isn't a valid uid],
+  ],
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`Queries spaceCenter should throw error with bad uid 1`] = `
+Object {
+  "data": Object {
+    "spaceCenter": null,
+  },
+  "errors": Array [
+    [GraphQLError: "uid" isn't a valid uid],
+  ],
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`Queries spaceCenter should throw error with id AND uid 1`] = `
+Object {
+  "data": Object {
+    "spaceCenter": null,
+  },
+  "errors": Array [
+    [GraphQLError: id or uid need to be defined for search one spaceCenter (only one !)],
+  ],
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`Queries spaceCenter should throw error without id uid 1`] = `
+Object {
+  "data": Object {
+    "spaceCenter": null,
+  },
+  "errors": Array [
+    [GraphQLError: id or uid need to be defined for search one spaceCenter (only one !)],
+  ],
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
 exports[`Queries spaceCenters fetch space centers  1`] = `
 Object {
   "data": Object {

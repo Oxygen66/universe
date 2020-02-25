@@ -9,6 +9,18 @@ class SpaceCenter {
       .limit(limit);
   }
 
+  async getById(id) {
+    return this.#db('space_center')
+      .where({ id })
+      .first();
+  }
+
+  async getByUid(uid) {
+    return this.#db('space_center')
+      .where({ uid })
+      .first();
+  }
+
   async getAllPaginated(page, pageSize) {
     return this.#db('space_center')
       .limit(pageSize)

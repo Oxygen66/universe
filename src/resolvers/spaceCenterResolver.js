@@ -1,4 +1,5 @@
 import { UserInputError } from 'apollo-server-koa';
+import validate from 'uuid-validate';
 
 const spaceCenterResolver = {
   Query: {
@@ -22,9 +23,29 @@ const spaceCenterResolver = {
         pageSize,
       });
     },
+    spaceCenter: async (
+      parent, { id, uid }, { dataSources: { spaceCenterAPI } },
+    ) => {
+      switch (true) {
+        case id && !uid:
+          return spaceCenterAPI.getById(id);
+        case !id && !!uid:
+          if (!validate(uid)) {
+            throw new UserInputError('"uid" isn\'t a valid uid', {
+              invalidArgs: 'uid',
+            });
+          }
+          return spaceCenterAPI.getByUid(uid);
+        default:
+          throw new UserInputError('id or uid need to be defined for search one spaceCenter (only one !)', {
+            invalidArgs: [
+              'id', 'uid',
+            ],
+          });
+      }
+    },
   },
   SpaceCentersResult: {
-    // eslint-disable-next-line no-unused-vars
     pagination: async (
       { page, pageSize }, arg, { dataSources: { spaceCenterAPI } },
     ) => {
