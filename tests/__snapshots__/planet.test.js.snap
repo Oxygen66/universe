@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Queries fetch list of planets 1`] = `
+exports[`Queries planets fetch list of planets 1`] = `
 Object {
   "data": Object {
     "planets": Array [
@@ -60,7 +60,7 @@ Object {
 }
 `;
 
-exports[`Queries fetch list of planets with custom limit 1`] = `
+exports[`Queries planets fetch list of planets with custom limit 1`] = `
 Object {
   "data": Object {
     "planets": Array [
@@ -132,7 +132,7 @@ Object {
 }
 `;
 
-exports[`Queries fetch list of planets with custom limit throw error (< 1) 1`] = `
+exports[`Queries planets fetch list of planets with custom limit throw error (< 1) 1`] = `
 Object {
   "data": Object {
     "planets": Array [
@@ -163,7 +163,7 @@ Object {
 }
 `;
 
-exports[`Queries fetch list of planets with custom limit throw error (> 10) 1`] = `
+exports[`Queries planets fetch list of planets with custom limit throw error (> 10) 1`] = `
 Object {
   "data": Object {
     "planets": Array [

@@ -10,6 +10,11 @@ const spaceCenterType = gql`
     latitude: Float!
     longitude: Float!
   }
+  
+  type SpaceCentersResult {
+      pagination: Pagination!
+      nodes: [SpaceCenter!]
+  }
 `;
 
 export default spaceCenterType;

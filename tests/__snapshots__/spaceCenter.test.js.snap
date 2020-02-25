@@ -1,0 +1,615 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Queries spaceCenters fetch space centers  1`] = `
+Object {
+  "data": Object {
+    "spaceCenters": Object {
+      "nodes": Array [
+        Object {
+          "description": "name1",
+          "id": "1",
+          "latitude": -1,
+          "longitude": -1,
+          "name": "name1",
+          "planet": Object {
+            "code": "COD",
+            "id": "1",
+            "name": "test1",
+          },
+          "uid": "uid1",
+        },
+        Object {
+          "description": "name2",
+          "id": "2",
+          "latitude": -1,
+          "longitude": -1,
+          "name": "name2",
+          "planet": Object {
+            "code": "COD",
+            "id": "1",
+            "name": "test1",
+          },
+          "uid": "uid2",
+        },
+        Object {
+          "description": "name3",
+          "id": "3",
+          "latitude": -1,
+          "longitude": -1,
+          "name": "name3",
+          "planet": Object {
+            "code": "COD",
+            "id": "1",
+            "name": "test1",
+          },
+          "uid": "uid3",
+        },
+        Object {
+          "description": "name4",
+          "id": "4",
+          "latitude": -1,
+          "longitude": -1,
+          "name": "name4",
+          "planet": Object {
+            "code": "COD",
+            "id": "1",
+            "name": "test1",
+          },
+          "uid": "uid4",
+        },
+        Object {
+          "description": "name5",
+          "id": "5",
+          "latitude": -1,
+          "longitude": -1,
+          "name": "name5",
+          "planet": Object {
+            "code": "COD",
+            "id": "1",
+            "name": "test1",
+          },
+          "uid": "uid5",
+        },
+        Object {
+          "description": "name6",
+          "id": "6",
+          "latitude": -1,
+          "longitude": -1,
+          "name": "name6",
+          "planet": Object {
+            "code": "COD",
+            "id": "1",
+            "name": "test1",
+          },
+          "uid": "uid6",
+        },
+        Object {
+          "description": "name7",
+          "id": "7",
+          "latitude": -1,
+          "longitude": -1,
+          "name": "name7",
+          "planet": Object {
+            "code": "COD",
+            "id": "1",
+            "name": "test1",
+          },
+          "uid": "uid7",
+        },
+        Object {
+          "description": "name8",
+          "id": "8",
+          "latitude": -1,
+          "longitude": -1,
+          "name": "name8",
+          "planet": Object {
+            "code": "COD",
+            "id": "1",
+            "name": "test1",
+          },
+          "uid": "uid8",
+        },
+        Object {
+          "description": "name9",
+          "id": "9",
+          "latitude": -1,
+          "longitude": -1,
+          "name": "name9",
+          "planet": Object {
+            "code": "COD",
+            "id": "1",
+            "name": "test1",
+          },
+          "uid": "uid9",
+        },
+        Object {
+          "description": "name10",
+          "id": "10",
+          "latitude": -1,
+          "longitude": -1,
+          "name": "name10",
+          "planet": Object {
+            "code": "COD",
+            "id": "1",
+            "name": "test1",
+          },
+          "uid": "uid10",
+        },
+      ],
+      "pagination": Object {
+        "page": 1,
+        "pageSize": 10,
+        "total": 1081,
+      },
+    },
+  },
+  "errors": undefined,
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`Queries spaceCenters fetch space centers  2`] = `
+Object {
+  "data": Object {
+    "spaceCenters": Object {
+      "nodes": Array [
+        Object {
+          "description": "name1",
+          "id": "1",
+          "latitude": -1,
+          "longitude": -1,
+          "name": "name1",
+          "planet": Object {
+            "code": "COD",
+            "id": "1",
+            "name": "test1",
+          },
+          "uid": "uid1",
+        },
+        Object {
+          "description": "name2",
+          "id": "2",
+          "latitude": -1,
+          "longitude": -1,
+          "name": "name2",
+          "planet": Object {
+            "code": "COD",
+            "id": "1",
+            "name": "test1",
+          },
+          "uid": "uid2",
+        },
+        Object {
+          "description": "name3",
+          "id": "3",
+          "latitude": -1,
+          "longitude": -1,
+          "name": "name3",
+          "planet": Object {
+            "code": "COD",
+            "id": "1",
+            "name": "test1",
+          },
+          "uid": "uid3",
+        },
+        Object {
+          "description": "name4",
+          "id": "4",
+          "latitude": -1,
+          "longitude": -1,
+          "name": "name4",
+          "planet": Object {
+            "code": "COD",
+            "id": "1",
+            "name": "test1",
+          },
+          "uid": "uid4",
+        },
+        Object {
+          "description": "name5",
+          "id": "5",
+          "latitude": -1,
+          "longitude": -1,
+          "name": "name5",
+          "planet": Object {
+            "code": "COD",
+            "id": "1",
+            "name": "test1",
+          },
+          "uid": "uid5",
+        },
+        Object {
+          "description": "name6",
+          "id": "6",
+          "latitude": -1,
+          "longitude": -1,
+          "name": "name6",
+          "planet": Object {
+            "code": "COD",
+            "id": "1",
+            "name": "test1",
+          },
+          "uid": "uid6",
+        },
+        Object {
+          "description": "name7",
+          "id": "7",
+          "latitude": -1,
+          "longitude": -1,
+          "name": "name7",
+          "planet": Object {
+            "code": "COD",
+            "id": "1",
+            "name": "test1",
+          },
+          "uid": "uid7",
+        },
+        Object {
+          "description": "name8",
+          "id": "8",
+          "latitude": -1,
+          "longitude": -1,
+          "name": "name8",
+          "planet": Object {
+            "code": "COD",
+            "id": "1",
+            "name": "test1",
+          },
+          "uid": "uid8",
+        },
+        Object {
+          "description": "name9",
+          "id": "9",
+          "latitude": -1,
+          "longitude": -1,
+          "name": "name9",
+          "planet": Object {
+            "code": "COD",
+            "id": "1",
+            "name": "test1",
+          },
+          "uid": "uid9",
+        },
+        Object {
+          "description": "name10",
+          "id": "10",
+          "latitude": -1,
+          "longitude": -1,
+          "name": "name10",
+          "planet": Object {
+            "code": "COD",
+            "id": "1",
+            "name": "test1",
+          },
+          "uid": "uid10",
+        },
+      ],
+      "pagination": Object {
+        "page": 1,
+        "pageSize": 10,
+        "total": 1081,
+      },
+    },
+  },
+  "errors": undefined,
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`Queries spaceCenters fetch spacers with custom page which throw error (page < 1) 1`] = `
+Object {
+  "data": Object {
+    "spaceCenters": null,
+  },
+  "errors": Array [
+    [GraphQLError: Page must be greater than 1],
+  ],
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`Queries spaceCenters fetch spacers with custom page, pageSize 1`] = `
+Object {
+  "data": Object {
+    "spaceCenters": Object {
+      "nodes": Array [
+        Object {
+          "description": "name109",
+          "id": "109",
+          "latitude": -1,
+          "longitude": -1,
+          "name": "name109",
+          "planet": Object {
+            "code": "COD",
+            "id": "1",
+            "name": "test1",
+          },
+          "uid": "uid109",
+        },
+        Object {
+          "description": "name110",
+          "id": "110",
+          "latitude": -1,
+          "longitude": -1,
+          "name": "name110",
+          "planet": Object {
+            "code": "COD",
+            "id": "1",
+            "name": "test1",
+          },
+          "uid": "uid110",
+        },
+        Object {
+          "description": "name111",
+          "id": "111",
+          "latitude": -1,
+          "longitude": -1,
+          "name": "name111",
+          "planet": Object {
+            "code": "COD",
+            "id": "1",
+            "name": "test1",
+          },
+          "uid": "uid111",
+        },
+        Object {
+          "description": "name112",
+          "id": "112",
+          "latitude": -1,
+          "longitude": -1,
+          "name": "name112",
+          "planet": Object {
+            "code": "COD",
+            "id": "1",
+            "name": "test1",
+          },
+          "uid": "uid112",
+        },
+        Object {
+          "description": "name113",
+          "id": "113",
+          "latitude": -1,
+          "longitude": -1,
+          "name": "name113",
+          "planet": Object {
+            "code": "COD",
+            "id": "1",
+            "name": "test1",
+          },
+          "uid": "uid113",
+        },
+        Object {
+          "description": "name114",
+          "id": "114",
+          "latitude": -1,
+          "longitude": -1,
+          "name": "name114",
+          "planet": Object {
+            "code": "COD",
+            "id": "1",
+            "name": "test1",
+          },
+          "uid": "uid114",
+        },
+        Object {
+          "description": "name115",
+          "id": "115",
+          "latitude": -1,
+          "longitude": -1,
+          "name": "name115",
+          "planet": Object {
+            "code": "COD",
+            "id": "1",
+            "name": "test1",
+          },
+          "uid": "uid115",
+        },
+        Object {
+          "description": "name116",
+          "id": "116",
+          "latitude": -1,
+          "longitude": -1,
+          "name": "name116",
+          "planet": Object {
+            "code": "COD",
+            "id": "1",
+            "name": "test1",
+          },
+          "uid": "uid116",
+        },
+        Object {
+          "description": "name117",
+          "id": "117",
+          "latitude": -1,
+          "longitude": -1,
+          "name": "name117",
+          "planet": Object {
+            "code": "COD",
+            "id": "1",
+            "name": "test1",
+          },
+          "uid": "uid117",
+        },
+        Object {
+          "description": "name118",
+          "id": "118",
+          "latitude": -1,
+          "longitude": -1,
+          "name": "name118",
+          "planet": Object {
+            "code": "COD",
+            "id": "1",
+            "name": "test1",
+          },
+          "uid": "uid118",
+        },
+        Object {
+          "description": "name119",
+          "id": "119",
+          "latitude": -1,
+          "longitude": -1,
+          "name": "name119",
+          "planet": Object {
+            "code": "COD",
+            "id": "1",
+            "name": "test1",
+          },
+          "uid": "uid119",
+        },
+        Object {
+          "description": "name120",
+          "id": "120",
+          "latitude": -1,
+          "longitude": -1,
+          "name": "name120",
+          "planet": Object {
+            "code": "COD",
+            "id": "1",
+            "name": "test1",
+          },
+          "uid": "uid120",
+        },
+        Object {
+          "description": "name121",
+          "id": "121",
+          "latitude": -1,
+          "longitude": -1,
+          "name": "name121",
+          "planet": Object {
+            "code": "COD",
+            "id": "1",
+            "name": "test1",
+          },
+          "uid": "uid121",
+        },
+        Object {
+          "description": "name122",
+          "id": "122",
+          "latitude": -1,
+          "longitude": -1,
+          "name": "name122",
+          "planet": Object {
+            "code": "COD",
+            "id": "1",
+            "name": "test1",
+          },
+          "uid": "uid122",
+        },
+        Object {
+          "description": "name123",
+          "id": "123",
+          "latitude": -1,
+          "longitude": -1,
+          "name": "name123",
+          "planet": Object {
+            "code": "COD",
+            "id": "1",
+            "name": "test1",
+          },
+          "uid": "uid123",
+        },
+        Object {
+          "description": "name124",
+          "id": "124",
+          "latitude": -1,
+          "longitude": -1,
+          "name": "name124",
+          "planet": Object {
+            "code": "COD",
+            "id": "1",
+            "name": "test1",
+          },
+          "uid": "uid124",
+        },
+        Object {
+          "description": "name125",
+          "id": "125",
+          "latitude": -1,
+          "longitude": -1,
+          "name": "name125",
+          "planet": Object {
+            "code": "COD",
+            "id": "1",
+            "name": "test1",
+          },
+          "uid": "uid125",
+        },
+        Object {
+          "description": "name126",
+          "id": "126",
+          "latitude": -1,
+          "longitude": -1,
+          "name": "name126",
+          "planet": Object {
+            "code": "COD",
+            "id": "1",
+            "name": "test1",
+          },
+          "uid": "uid126",
+        },
+      ],
+      "pagination": Object {
+        "page": 7,
+        "pageSize": 18,
+        "total": 1081,
+      },
+    },
+  },
+  "errors": undefined,
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`Queries spaceCenters fetch spacers with custom pageSize which throw error (pageSize > 100) 1`] = `
+Object {
+  "data": Object {
+    "spaceCenters": null,
+  },
+  "errors": Array [
+    [GraphQLError: PageSize must be between 1 and 100],
+  ],
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`Queries spaceCenters fetch spacers with custom pageSize which throw error (pageSize > 100) 2`] = `
+Object {
+  "data": Object {
+    "spaceCenters": null,
+  },
+  "errors": Array [
+    [GraphQLError: PageSize must be between 1 and 100],
+  ],
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
