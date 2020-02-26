@@ -11,6 +11,7 @@ const query = gql`
         id: Int
         uid: String
     ): SpaceCenter
+    booking(id: Int!): Booking
   }
 `;
 

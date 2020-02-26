@@ -30,6 +30,9 @@ const bookingResolver = {
       return bookingResult;
     },
   },
+  Query: {
+    booking: (_, { id }, { dataSources: { bookingAPI } }) => bookingAPI.getById(id),
+  },
   Booking: {
     id: (parent) => parent.id,
     seatCount: (parent) => parent.seat_count,
