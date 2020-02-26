@@ -7,6 +7,11 @@ const bookingType = gql`
         seatCount: Int!
         email: String!
     }
+    
+    type BookingsResult {
+        pagination: Pagination!
+        nodes: [Booking!]
+    }
 `;
 
 export default bookingType;

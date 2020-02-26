@@ -24,7 +24,7 @@ class SpaceCenter {
   async getAllPaginated(page, pageSize) {
     return this.#db('space_center')
       .limit(pageSize)
-      .offset((pageSize - 1) * page);
+      .offset((page - 1) * pageSize);
   }
 
   async countAll() {
