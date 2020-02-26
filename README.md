@@ -35,6 +35,13 @@ cp docker/.env.example docker/.env
 npm run start
 ```
 
+Add your token in request header for call queries / mutations (defined in .env file):
+```
+{
+  "authorization": "MISTERY_TOKEN"
+}
+```
+
 ## Run tests
 
 ```sh
