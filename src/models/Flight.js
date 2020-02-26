@@ -15,6 +15,11 @@ class Flight {
       })
       .returning(['id', 'code', 'departure_at', 'seat_count', 'landing_site', 'launching_site']);
   }
+
+  async getById(id) {
+    return this.#db('flight')
+      .where({ id }).first();
+  }
 }
 
 export default Flight;

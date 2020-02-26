@@ -7,6 +7,14 @@ class Booking {
     return this.#db('booking')
       .where('flight_id', flightId);
   }
+
+  async createBooking(seatCount, flightId, email) {
+    return this.#db('booking').insert({
+      seat_count: seatCount,
+      flight_id: flightId,
+      email,
+    }).returning('*');
+  }
 }
 
 export default Booking;
