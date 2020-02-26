@@ -1,0 +1,195 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Queries planets fetch list of planets 1`] = `
+Object {
+  "data": Object {
+    "planets": Array [
+      Object {
+        "code": "CD1",
+        "id": "1",
+        "name": "test1",
+        "spaceCenters": Array [
+          Object {
+            "id": "1",
+          },
+          Object {
+            "id": "2",
+          },
+          Object {
+            "id": "3",
+          },
+          Object {
+            "id": "4",
+          },
+          Object {
+            "id": "5",
+          },
+        ],
+      },
+      Object {
+        "code": "CD",
+        "id": "2",
+        "name": "test2",
+        "spaceCenters": Array [
+          Object {
+            "id": "6",
+          },
+          Object {
+            "id": "7",
+          },
+          Object {
+            "id": "8",
+          },
+          Object {
+            "id": "9",
+          },
+          Object {
+            "id": "10",
+          },
+        ],
+      },
+    ],
+  },
+  "errors": undefined,
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`Queries planets fetch list of planets with custom limit 1`] = `
+Object {
+  "data": Object {
+    "planets": Array [
+      Object {
+        "code": "CD1",
+        "id": "1",
+        "name": "test1",
+        "spaceCenters": Array [
+          Object {
+            "id": "1",
+          },
+          Object {
+            "id": "2",
+          },
+          Object {
+            "id": "3",
+          },
+          Object {
+            "id": "4",
+          },
+          Object {
+            "id": "5",
+          },
+          Object {
+            "id": "6",
+          },
+          Object {
+            "id": "7",
+          },
+        ],
+      },
+      Object {
+        "code": "CD",
+        "id": "2",
+        "name": "test2",
+        "spaceCenters": Array [
+          Object {
+            "id": "8",
+          },
+          Object {
+            "id": "9",
+          },
+          Object {
+            "id": "10",
+          },
+          Object {
+            "id": "11",
+          },
+          Object {
+            "id": "12",
+          },
+          Object {
+            "id": "13",
+          },
+          Object {
+            "id": "14",
+          },
+        ],
+      },
+    ],
+  },
+  "errors": undefined,
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`Queries planets fetch list of planets with custom limit throw error (< 1) 1`] = `
+Object {
+  "data": Object {
+    "planets": Array [
+      Object {
+        "code": "CD1",
+        "id": "1",
+        "name": "test1",
+        "spaceCenters": null,
+      },
+      Object {
+        "code": "CD",
+        "id": "2",
+        "name": "test2",
+        "spaceCenters": null,
+      },
+    ],
+  },
+  "errors": Array [
+    [GraphQLError: Limit must be between 1 and 10],
+    [GraphQLError: Limit must be between 1 and 10],
+  ],
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`Queries planets fetch list of planets with custom limit throw error (> 10) 1`] = `
+Object {
+  "data": Object {
+    "planets": Array [
+      Object {
+        "code": "CD1",
+        "id": "1",
+        "name": "test1",
+        "spaceCenters": null,
+      },
+      Object {
+        "code": "CD",
+        "id": "2",
+        "name": "test2",
+        "spaceCenters": null,
+      },
+    ],
+  },
+  "errors": Array [
+    [GraphQLError: Limit must be between 1 and 10],
+    [GraphQLError: Limit must be between 1 and 10],
+  ],
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;

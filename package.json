@@ -5,27 +5,48 @@
   "main": "src/index.js",
   "private": true,
   "scripts": {
-    "start": "nodemon --exec 'npm run lint && babel-node -r dotenv/config' -- src/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --exec \"npm run lint && babel-node -r dotenv/config\" -- src/index.js",
+    "test": "jest",
+    "test:cov": "jest --coverage --notify --watchAll",
     "lint": "eslint src/index.js"
+  },
+  "dependencies": {
+    "apollo-server-koa": "^2.10.1",
+    "dotenv": "^8.2.0",
+    "graphql": "^14.6.0",
+    "graphql-type-datetime": "^0.2.4",
+    "knex": "^0.20.10",
+    "koa": "^2.11.0",
+    "lodash": "^4.17.15",
+    "pg": "^7.18.2",
+    "uuid-validate": "0.0.3"
   },
   "devDependencies": {
     "@babel/cli": "^7.8.4",
     "@babel/core": "^7.8.4",
     "@babel/node": "^7.8.4",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
     "@babel/preset-env": "^7.8.4",
+    "apollo-server-testing": "^2.10.1",
+    "babel-eslint": "^10.0.3",
     "eslint": "^6.8.0",
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-jest": "^23.7.0",
+    "jest": "^25.1.0",
     "nodemon": "^2.0.2"
   },
   "eslintConfig": {
     "env": {
       "es6": true,
-      "node": true
+      "node": true,
+      "jest": true
     },
     "extends": [
       "airbnb-base"
+    ],
+    "plugins": [
+      "jest"
     ],
     "globals": {
       "Atomics": "readonly",
@@ -35,12 +56,11 @@
       "ecmaVersion": 2018,
       "sourceType": "module"
     },
+    "parser": "babel-eslint",
     "rules": {}
   },
-  "babel": {
-    "presets": [
-      "@babel/preset-env"
-    ]
+  "jest": {
+    "verbose": true
   },
   "repository": {
     "type": "git",
@@ -51,8 +71,5 @@
   "bugs": {
     "url": "https://github.com/Oxygen66/universe/issues"
   },
-  "homepage": "https://github.com/Oxygen66/universe#readme",
-  "dependencies": {
-    "dotenv": "^8.2.0"
-  }
+  "homepage": "https://github.com/Oxygen66/universe#readme"
 }
