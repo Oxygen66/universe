@@ -4,7 +4,7 @@ const scheduleFlightInput = gql`
     input ScheduleFlightInput {
         launchSiteId: Int!
         landingSiteId: Int!
-        departureAt: String!
+        departureAt: DateTime!
         seatCount: Int!
     }
 `;

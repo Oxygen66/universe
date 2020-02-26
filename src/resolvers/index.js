@@ -1,4 +1,5 @@
 import { merge } from 'lodash';
+import DateTime from 'graphql-type-datetime';
 import planetResolver from './planetResolver';
 import spaceCenterResolver from './spaceCenterResolver';
 import paginationResolver from './paginationResolver';
@@ -11,6 +12,7 @@ const resolvers = merge(
   paginationResolver,
   flightResolver,
   bookingResolver,
+  { DateTime },
 );
 
 export default resolvers;

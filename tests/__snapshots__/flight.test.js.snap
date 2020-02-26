@@ -6,7 +6,7 @@ Object {
     "scheduleFlight": Object {
       "availableSeats": 5,
       "code": "ddd99ffbca076ef4e188774eea6d4d05",
-      "departureAt": "0",
+      "departureAt": 1970-01-01T00:00:00.000Z,
       "id": "1",
       "landingSite": Object {
         "name": "name2",
