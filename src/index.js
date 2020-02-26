@@ -4,6 +4,8 @@ import typeDefs from './typeDefs';
 import resolvers from './resolvers';
 import Planet from './models/Planet';
 import SpaceCenter from './models/SpaceCenter';
+import Flight from './models/Flight';
+import Booking from './models/Booking';
 
 const server = new ApolloServer({
   typeDefs,
@@ -11,6 +13,8 @@ const server = new ApolloServer({
   dataSources: () => ({
     planetAPI: new Planet(),
     spaceCenterAPI: new SpaceCenter(),
+    flightAPI: new Flight(),
+    bookingAPI: new Booking(),
   }),
 });
 

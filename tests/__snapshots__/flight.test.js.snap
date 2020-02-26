@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Mutations scheduleFlight Create flight 1`] = `
+Object {
+  "data": Object {
+    "scheduleFlight": Object {
+      "availableSeats": 5,
+      "code": "ddd99ffbca076ef4e188774eea6d4d05",
+      "departureAt": "0",
+      "id": "1",
+      "landingSite": Object {
+        "name": "name2",
+        "planet": Object {
+          "name": "test1",
+        },
+      },
+      "launchSite": Object {
+        "name": "name1",
+        "planet": Object {
+          "name": "test1",
+        },
+      },
+      "seatCount": 5,
+    },
+  },
+  "errors": undefined,
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`Mutations scheduleFlight Create flight with same launchSiteId and landingSiteId throw error 1`] = `
+Object {
+  "data": null,
+  "errors": Array [
+    [GraphQLError: landingSiteId and landingSiteId cannot be the same],
+  ],
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
