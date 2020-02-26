@@ -1,5 +1,5 @@
 import Koa from 'koa';
-import { ApolloServer } from 'apollo-server-koa';
+import { ApolloServer, AuthenticationError } from 'apollo-server-koa';
 import typeDefs from './typeDefs';
 import resolvers from './resolvers';
 import Planet from './models/Planet';
@@ -16,6 +16,13 @@ const server = new ApolloServer({
     flightAPI: new Flight(),
     bookingAPI: new Booking(),
   }),
+  context: ({ ctx }) => {
+    const token = ctx.request.header.authorization || null;
+
+    if (token !== process.env.SECRET_JWT) {
+      throw new AuthenticationError('You must be logged in');
+    }
+  },
 });
 
 const app = new Koa();
