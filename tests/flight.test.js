@@ -87,8 +87,7 @@ describe('Mutations', () => {
         },
       });
 
-      // console.log(res.errors[0]);
-      // expect(res.errors).not.toBeTruthy();
+      expect(res.errors).not.toBeTruthy();
       expect(res).toMatchSnapshot();
     });
 
